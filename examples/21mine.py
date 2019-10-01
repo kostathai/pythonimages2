@@ -58,13 +58,6 @@ def update():
   if xCoord(obj) >= 500:
     close()
 
-penSize(1)
-brushColor('yellow')
-obj_1 = circle(100,320,15)         
-def goup():
-  if xCoord(obj) >= 120:
-    moveObjectBy(obj_1, 0, -5)
-onTimer(goup, 50)
 
 
 
@@ -77,4 +70,17 @@ clouds()
 brushColor(0, 0, 0)
 obj = polygon([(10, 300), (30, 280),  (300, 280), (320, 300)])
 onTimer(update, 50)
+
+
+penSize(1)
+brushColor('yellow')
+obj_1 = circle(100,320,15)         
+def goup():
+  if xCoord(obj) >= 120:
+    moveObjectBy(obj_1, 0, -5)
+onTimer(goup, 50)
+
+
+
+
 run()
