@@ -58,6 +58,13 @@ def update():
   if xCoord(obj) >= 500:
     close()
 
+penSize(1)
+brushColor('yellow')
+obj_1 = circle(100,320,15)         
+def goup():
+  if xCoord(obj) >= 120:
+    moveObjectBy(obj_1, 0, -5)
+onTimer(goup, 50)
 
 
 
